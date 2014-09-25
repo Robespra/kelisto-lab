@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.yourname.poesis" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Poesis</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <platform name="amazon-fireos">
+              <icon src="res/icon/android/icon-36-ldpi.png" density="ldpi" />
+              <icon src="res/icon/android/icon-48-mdpi.png" density="mdpi" />
+              <icon src="res/icon/android/icon-72-hdpi.png" density="hdpi" />
+              <icon src="res/icon/android/icon-96-xhdpi.png" density="xhdpi" />
+     </platform>
+    
+     <platform name="android">
+      <icon src="res/icon/android/icon-36-ldpi.png" density="ldpi" />
+      <icon src="res/icon/android/icon-48-mdpi.png" density="mdpi" />
+      <icon src="res/icon/android/icon-72-hdpi.png" density="hdpi" />
+      <icon src="res/icon/android/icon-96-xhdpi.png" density="xhdpi" />
+     </platform>
+
+      <platform name="blackberry10">
+              <icon src="res/icon/bb10/icon-86.png" />
+              <icon src="res/icon/bb10/icon-150.png" />
+     </platform>
+
+       <platform name="firefoxos">
+              <icon src="res/icon/ff/logo.png" width="60" height="60" />
+     </platform>
+     <platform name="ios">
+              <!-- iOS 7.0+ -->
+              <!-- iPhone / iPod Touch  -->
+              <icon src="res/icon/ios/icon-60.png" width="60" height="60" />
+              <icon src="res/icon/ios/icon-60@2x.png" width="120" height="120" />
+              <!-- iPad -->
+              <icon src="res/icon/ios/icon-76.png" width="76" height="76" />
+              <icon src="res/icon/ios/icon-76@2x.png" width="152" height="152" />
+              <!-- iOS 6.1 -->
+              <!-- Spotlight Icon -->
+              <icon src="res/icon/ios/icon-40.png" width="40" height="40" />
+              <icon src="res/icon/ios/icon-40@2x.png" width="80" height="80" />
+              <!-- iPhone / iPod Touch -->
+              <icon src="res/icon/ios/icon.png" width="57" height="57" />
+              <icon src="res/icon/ios/icon@2x.png" width="114" height="114" />
+              <!-- iPad -->
+              <icon src="res/icon/ios/icon-72.png" width="72" height="72" />
+              <icon src="res/icon/ios/icon-72@2x.png" width="144" height="144" />
+              <!-- iPhone Spotlight and Settings Icon -->
+              <icon src="res/icon/ios/icon-small.png" width="29" height="29" />
+              <icon src="res/icon/ios/icon-small@2x.png" width="58" height="58" />
+              <!-- iPad Spotlight and Settings Icon -->
+              <icon src="res/icon/ios/icon-50.png" width="50" height="50" />
+              <icon src="res/icon/ios/icon-50@2x.png" width="100" height="100" />
+     </platform>
+
+     <platform name="tizen">
+              <icon src="res/icon/tizen/icon-128.png" width="128" height="128" />
+     </platform>
+
+     <platform name="wp8">
+              <icon src="res/icon/wp/ApplicationIcon.png" width="99" height="99" />
+              <!-- tile image -->
+              <icon src="res/icon/wp/Background.png" width="159" height="159" />
+     </platform>
+<platform name="windows8">
+              <icon src="res/icon/windows8/logo.png" width="150" height="150" />
+              <icon src="res/icon/windows8/smalllogo.png" width="30" height="30" />
+              <icon src="res/icon/windows8/storelogo.png" width="50" height="50" />
+     </platform>
+<preference name="SplashScreen" value="screen" />
+<preference name="SplashScreenDelay" value="5000" />
+    </widget>
