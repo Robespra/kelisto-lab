@@ -1,120 +1,114 @@
 
-<div class="home">
-<div class="cd-gallery-container">
-		
 
-		<ul class="cd-gallery cd-container">
-			<li>
-				<ul class="cd-item-wrapper">
-					<li  data-type="red" class="is-visible">
-						<div class="timeline-date">10/09/2014</div>
-						<a href="#articles_01_header">HEYYYY HEADER HOMEPAGE STUFFFFFF</a>
-					</li>
 
-				</ul>
-			</li>
-
-			<li>
-				<ul class="cd-item-wrapper">
-					<li data-type="red" class="is-visible">
-					<div class="timeline-date">10/09/2014</div>
-						<a href="#articles_02_product_page">HEYYYYYYYYY PRODUCT PAGE STUFFFFF</a>
-					</li>
-
-				</ul>
-			</li>
-
-			<li>
-				<ul class="cd-item-wrapper">
-					<li data-type="red" class="is-visible">
-					<div class="timeline-date">10/09/2014</div>
-						<a href="#articles_03_CI_corner">HEYYYYYYYYYYYYYY CI CORNER</a>
-					</li>
-				</ul>
-			</li>
-
+<main>
+       	 
+	        <section id="slide-1" class="homeSlide">
+	        	<div class="bcg" 
+	        		data-center="background-position: 50% 0px;" 
+	        		data-top-bottom="background-position: 50% -100px;" 
+	        		data-anchor-target="#slide-1"
+	        	>
+		        	<div class="hsContainer">
+			    		<div class="hsContent" data-center="bottom: 200px; opacity: 1" data-top="bottom: 1200px; opacity: 0" data-anchor-target="#slide-1 h2">
+				    		<h2>THE LAB</h2>
+				    		<a href="#articles_01_header">HEYYYY HEADER HOMEPAGE STUFFFFFF</a>
+			    		</div>
+		        	</div>
+	        	</div>
+		    </section>
+		    
+			<section id="slide-2" class="homeSlide">
+				<div class="bcg" 
+					data-center="background-position: 50% 10px;" 
+					data-top-bottom="background-position: 50% -100px;" 
+					data-bottom-top="background-position: 50% 100px;" 
+					data-anchor-target="#slide-2"
+				>
+			    	<div class="hsContainer">
+			    		<div class="hsContent" 
+			    			data-center="opacity: 1" 
+			    			data-center-top="opacity: 0" 
+			    			data--100-bottom="opacity: 0;" 
+			    			data-anchor-target="#slide-2"
+			    		>
+				    		<h2>The header stuffffff</h2>
+			    		</div>
+			    	</div>
+				</div>
+			</section>
+		    
+			<section id="slide-3" class="homeSlide">
+				<div class="bcg" 
+					data-center="background-position: 50% 0px;" 
+					data-top-bottom="background-position: 50% -100px;" 
+					data-bottom-top="background-position: 50% 100px;" 
+					data-anchor-target="#slide-3"
+				>
+			    	<div class="hsContainer">
+						<div class="hsContent" 
+							data--50-bottom="opacity: 0;" 
+							data--200-bottom="opacity: 1;" 
+							data-center="opacity: 1" 
+							data-200-top="opacity: 0" 
+							data-anchor-target="#slide-3 h2"
+						>
+				    		<h2>The product page stuffffff</h2>
+				    		<a href="#articles_02_product_page">HEYYYYYYYYY PRODUCT PAGE STUFFFFF</a>
+			    		</div>
+			    	</div>
+			    	
+			    </div>
+			</section>
 			
-		</ul> <!-- cd-gallery -->
-		<script>
-		jQuery(document).ready(function($){
-    var filter_list_container = $('.cd-filter'),
-        filter_values = filter_list_container.find('li:not(.placeholder) a'),
-        filter_list_placeholder = filter_list_container.find('.placeholder a'),
-        filter_list_placeholder_text = filter_list_placeholder.text(), 
-        filter_list_placeholder_default_value = 'MENU',
-        gallery_item_wrapper = $('.cd-gallery').find('.cd-item-wrapper');
+			<section id="slide-4" class="homeSlide">
+				<div class="bcg" 
+					data-center="background-position: 50% 0px;" 
+					data-top-bottom="background-position: 50% -100px;" 
+					data-bottom-top="background-position: 50% 100px;" 
+					data-anchor-target="#slide-4"
+				>
+			    	<div class="hsContainer">
+						<div class="hsContent" 
+							data-bottom-top="opacity: 0" 
+							data-25p-top="opacity: 0" 
+							data-top="opacity: 1"  
+							data-anchor-target="#slide-4"
+						>
+				    		<h2>THE CI CORNER STUFFFFFF</h2>
+				    		<a href="#articles_03_CI_corner">HEYYYYYYYYYYYYYY CI CORNER</a>
+			    		</div>
+			    	</div>
+			    	
+			    </div>
+			</section>
+			<section id="slide-5" class="homeSlide">
+				<div class="bcg" 
+					data-center="background-position: 50% 0px;" 
+					data-top-bottom="background-position: 50% -100px;" 
+					data-bottom-top="background-position: 50% 100px;" 
+					data-anchor-target="#slide-5"
+				>
+			    	<div class="hsContainer">
+						<div class="hsContent" 
+							data--50-bottom="opacity: 0;" 
+							data--200-bottom="opacity: 1;" 
+							data-center="opacity: 1" 
+							data-200-top="opacity: 0" 
+							data-anchor-target="#slide-5 h2"
+						>
+				    		<h2>The product page stuffffff</h2>
+				    		<a href="#articles_02_product_page">HEYYYYYYYYY PRODUCT PAGE STUFFFFF</a>
+			    		</div>
+			    	</div>
+			    	
+			    </div>
+			</section>
+		    
+		</main>
 
-    //store gallery items
-    var gallery_elements = {};
-    filter_values.each(function(){
-        var filter_type = $(this).data('type');
-        gallery_elements[filter_type] = gallery_item_wrapper.find('li[data-type="'+filter_type+'"]');
-    });
-
-    //detect click event
-    filter_list_container.on('click', function(event){
-        event.preventDefault();
-        //detect which filter item was selected
-        var selected_filter = $(event.target).data('type');
-            
-        //check if user has clicked the placeholder item (for mobile version)
-        if( $(event.target).is(filter_list_placeholder) || $(event.target).is(filter_list_container) ) {
-
-            (filter_list_placeholder_default_value == filter_list_placeholder.text()) ? filter_list_placeholder.text(filter_list_placeholder_text) : filter_list_placeholder.text(filter_list_placeholder_default_value) ;
-            filter_list_container.toggleClass('is-open');
-
-        //check if user has clicked a filter already selected 
-        } else if( filter_list_placeholder.data('type') == selected_filter ) {
-            
-            filter_list_placeholder.text($(event.target).text()) ;
-            filter_list_container.removeClass('is-open');   
-
-        } else {
-            //close the dropdown (mobile version) and change placeholder text/data-type value
-            filter_list_container.removeClass('is-open');
-            filter_list_placeholder.text($(event.target).text()).data('type', selected_filter);
-            filter_list_placeholder_text = $(event.target).text();
-            
-            //add class selected to the selected filter item
-            filter_values.removeClass('selected');
-            $(event.target).addClass('selected');
-
-            //give higher z-index to the gallery items selected by the filter
-            show_selected_items(gallery_elements[selected_filter]);
-
-            //rotate each item-wrapper of the gallery
-            //at the end of the animation hide the not-selected items in the gallery amd rotate back the item-wrappers
-            
-            // fallback added for IE9
-            var is_explorer_9 = navigator.userAgent.indexOf('MSIE 9') > -1;
-            
-            if( is_explorer_9 ) {
-                hide_not_selected_items(gallery_elements, selected_filter);
-                gallery_item_wrapper.removeClass('is-switched');
-            } else {
-                gallery_item_wrapper.addClass('is-switched').eq(0).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {     
-                    hide_not_selected_items(gallery_elements, selected_filter);
-                    gallery_item_wrapper.removeClass('is-switched');
-                });
-            }
-        }
-    });
-});
-
-function show_selected_items(selected_elements) {
-    selected_elements.addClass('is-selected');
-}
-
-function hide_not_selected_items(gallery_containers, filter) {
-    $.each(gallery_containers, function(key, value){
-        if ( key != filter ) {  
-            $(this).removeClass('is-visible is-selected').addClass('is-hidden');
-
-        } else {
-            $(this).addClass('is-visible').removeClass('is-hidden is-selected');
-        }
-    });
-}
-</script>
-	</div> <!-- cd-gallery-container -->
-</div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/imagesloaded.js"></script>
+        <script src="js/skrollr.js"></script>
+        <script src="js/_main.js"></script>
