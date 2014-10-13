@@ -1,39 +1,120 @@
 
-<div class="main">
-	  <section class="page1">
-      <div class="page_container">
-        <h1>Forward Thinking</h1>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
-        </div>
-    </section>
-    <section class="page2">
-      <div class="page_container">
-        <h1>iPhone 5S</h1>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-      </div>
-    </section>
-    <section class="page3">
-      <div class="page_container">
-        <h1>Pretty cool eh?</h1>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-      </div>
-    </section>
-	</div>
-	<script type="text/javascript">
-	   $(".main").onepage_scroll({
-   sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
-   easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
-                                    // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
-   animationTime: 500,             // AnimationTime let you define how long each section takes to animate
-   pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
-   updateURL: true,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
-   beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
-   afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
-   loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
-   keyboard: true,                  // You can activate the keyboard controls
-   responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
-                                    // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
-                                    // the browser's width is less than 600, the fallback will kick in.
-   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
+<div class="home">
+<div class="cd-gallery-container">
+		
+
+		<ul class="cd-gallery cd-container">
+			<li>
+				<ul class="cd-item-wrapper">
+					<li  data-type="red" class="is-visible">
+						<div class="timeline-date">10/09/2014</div>
+						<a href="#articles_01_header">HEYYYY HEADER HOMEPAGE STUFFFFFF</a>
+					</li>
+
+				</ul>
+			</li>
+
+			<li>
+				<ul class="cd-item-wrapper">
+					<li data-type="red" class="is-visible">
+					<div class="timeline-date">10/09/2014</div>
+						<a href="#articles_02_product_page">HEYYYYYYYYY PRODUCT PAGE STUFFFFF</a>
+					</li>
+
+				</ul>
+			</li>
+
+			<li>
+				<ul class="cd-item-wrapper">
+					<li data-type="red" class="is-visible">
+					<div class="timeline-date">10/09/2014</div>
+						<a href="#articles_03_CI_corner">HEYYYYYYYYYYYYYY CI CORNER</a>
+					</li>
+				</ul>
+			</li>
+
+			
+		</ul> <!-- cd-gallery -->
+		<script>
+		jQuery(document).ready(function($){
+    var filter_list_container = $('.cd-filter'),
+        filter_values = filter_list_container.find('li:not(.placeholder) a'),
+        filter_list_placeholder = filter_list_container.find('.placeholder a'),
+        filter_list_placeholder_text = filter_list_placeholder.text(), 
+        filter_list_placeholder_default_value = 'MENU',
+        gallery_item_wrapper = $('.cd-gallery').find('.cd-item-wrapper');
+
+    //store gallery items
+    var gallery_elements = {};
+    filter_values.each(function(){
+        var filter_type = $(this).data('type');
+        gallery_elements[filter_type] = gallery_item_wrapper.find('li[data-type="'+filter_type+'"]');
+    });
+
+    //detect click event
+    filter_list_container.on('click', function(event){
+        event.preventDefault();
+        //detect which filter item was selected
+        var selected_filter = $(event.target).data('type');
+            
+        //check if user has clicked the placeholder item (for mobile version)
+        if( $(event.target).is(filter_list_placeholder) || $(event.target).is(filter_list_container) ) {
+
+            (filter_list_placeholder_default_value == filter_list_placeholder.text()) ? filter_list_placeholder.text(filter_list_placeholder_text) : filter_list_placeholder.text(filter_list_placeholder_default_value) ;
+            filter_list_container.toggleClass('is-open');
+
+        //check if user has clicked a filter already selected 
+        } else if( filter_list_placeholder.data('type') == selected_filter ) {
+            
+            filter_list_placeholder.text($(event.target).text()) ;
+            filter_list_container.removeClass('is-open');   
+
+        } else {
+            //close the dropdown (mobile version) and change placeholder text/data-type value
+            filter_list_container.removeClass('is-open');
+            filter_list_placeholder.text($(event.target).text()).data('type', selected_filter);
+            filter_list_placeholder_text = $(event.target).text();
+            
+            //add class selected to the selected filter item
+            filter_values.removeClass('selected');
+            $(event.target).addClass('selected');
+
+            //give higher z-index to the gallery items selected by the filter
+            show_selected_items(gallery_elements[selected_filter]);
+
+            //rotate each item-wrapper of the gallery
+            //at the end of the animation hide the not-selected items in the gallery amd rotate back the item-wrappers
+            
+            // fallback added for IE9
+            var is_explorer_9 = navigator.userAgent.indexOf('MSIE 9') > -1;
+            
+            if( is_explorer_9 ) {
+                hide_not_selected_items(gallery_elements, selected_filter);
+                gallery_item_wrapper.removeClass('is-switched');
+            } else {
+                gallery_item_wrapper.addClass('is-switched').eq(0).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {     
+                    hide_not_selected_items(gallery_elements, selected_filter);
+                    gallery_item_wrapper.removeClass('is-switched');
+                });
+            }
+        }
+    });
 });
-  	</script>
+
+function show_selected_items(selected_elements) {
+    selected_elements.addClass('is-selected');
+}
+
+function hide_not_selected_items(gallery_containers, filter) {
+    $.each(gallery_containers, function(key, value){
+        if ( key != filter ) {  
+            $(this).removeClass('is-visible is-selected').addClass('is-hidden');
+
+        } else {
+            $(this).addClass('is-visible').removeClass('is-hidden is-selected');
+        }
+    });
+}
+</script>
+	</div> <!-- cd-gallery-container -->
+</div>
