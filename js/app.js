@@ -41,6 +41,16 @@
             .when('/articles_03_CI_corner', {
                 templateUrl : 'pages/articles_03_CI_corner.html',
                 controller  : 'articleController'
+            })
+
+            .when('/articles_04_process_breadcrumb', {
+                templateUrl : 'pages/articles_04_ci_breadcrumb.html',
+                controller  : 'articleController'
+            })
+
+            .when('/articles_05_fullwidth_article', {
+                templateUrl : 'pages/articles_05_fullwidth_article.html',
+                controller  : 'articleController'
             });
 
     });
