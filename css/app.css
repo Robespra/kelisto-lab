@@ -73,6 +73,16 @@ strong {
 h1, h2, h3 {
   font-family: 'Raleway', sans-serif; }
 
+
+.loader {
+  position: relative;
+  top:30%;
+  width:80px;
+  z-index: 9999;
+  margin:0 auto;
+  display: block;
+}
+
 /* -------------------------------- 
 
 Modules - reusable parts of our design
@@ -848,7 +858,7 @@ input[type=range]:focus::-moz-range-thumb {
 }
 
 .pin p {
-  font: 14px/20px 'Raleway', 'Open Sans' sans-serif;
+  font: 16px/22px 'Raleway', 'Open Sans' sans-serif;
   font-weight:400;
   color: #2a2a2a;
   margin: 0;
