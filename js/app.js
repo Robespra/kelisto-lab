@@ -119,11 +119,11 @@ app.controller("articleController", function($scope) {
   
 });
 
-app.controller("three", function($scope) { 
+// app.controller("three", function($scope) { 
   
-});
+// });
 
-app.controller("four", function($scope) { 
+// app.controller("four", function($scope) { 
   
-});
+// });
 
