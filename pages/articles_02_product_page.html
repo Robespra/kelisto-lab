@@ -1,34 +1,443 @@
 
 <script>$('html, body').animate({ scrollTop: 0 }, 'fast');</script>
 <section>
- 
+
+
 <header class="labnav">  
   <div class="back">
 <a href="#"><img src="img/back_btn.svg" alt=""/></a>
 </div>
-
 </header>  
-<div class="wrap-article">
-  <h3>The problem</h3>
-<p>fasdfasdfdasafsd</p>
+  <div class="wrap-article">
+<h1>Header // Footer</h1>
+<img src="img/header-current.png" alt="" class="current"/>
+<h3>The problems</h3>
+<h4 class="red">// Our navigation is too loud </h4>
+<img src="img/visual-hierarchy.png" alt="" class="illustr"/>
+<p class="petit">
+  Layout, colours and typography have a huge
+influence on what the eye is drawn to, and
+consequently how information is consumed. Let's not mute some key components like best-buys tables or direct access to products within content with a navbar that doesn't directly converts.
+</p>
+<h4 class="red">// Underused CTA to products </h4>
+<p class="petit">
+  That beign said (see above), our goal is to get users to comparators. Let's make sure our navbar displays CTA's for most valuable products that stands out from the rest of our main menu items. This button should help our visitor achieve our goal (direct access to products).
+  </p>
+<h4 class="red">// We’re not using active states in your main menu</h4>
+<p class="petit">
+A simple way to make our website more usable is to remind your visitors of where they are at at all times. We do this with breadcrumbs, but it’s also important to make sure your main menu uses active states. Our main menu should highlight the pages you are on at the moment. 
+</p>
+<h4 class="red">// Design implementation</h4>
+<p class="petit">
+  The purple - circle logo
 
+   </p>
+  <h4 class="red">// Header is not fixed on mobile device </h4>
+<p class="petit">
+Page views rate is slightly higher on mobile devices, why would we make mobile-user experience so painful ?
+</p>
+<h4 class="red">// Search box is not wide enough </h4>
+<p class="petit">
+Seems that many visitors use this tool, let's give it the space it deserves!
+</p>
 
 <h3>The solution (resize for responsive view)</h3>
-<p>fasdfasdfdasafsd</p>
-<div id="comparison-product">
-  <figure>
-    <div id="divisor"></div>
-  </figure>
-  <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
+<h4 class="green">// Maximise CTA to products </h4>
+<p class="petit">
+Limit fancy CTA to 1 or 2 options by vertical. Large drop-downs can slow the customer journey by providing too much choice and complexity. The ‘Paradox of choice’.</p>
+<h4 class="green">// test on hover and collapsible mega menu</h4>
+<p>Collapsible Mega Menu
+A collapsible mega menu is useful if you have a lot of items in your menu. The advantage of this approach is that it won’t cover up any page content. Instead, it’ll push the page down when the menu opens so that all content remains visible. Not only that, but users can move their mouse anywhere and the menu won’t close on them. This means no more hover tunnels or hard-to-click peripheral items.</p>
 </div>
-
+<div class="faux-browser">
+  <img src="img/faux-browser-btn.svg" alt="" class="faux-browser-btn"/>
+ <div class="main">
+        <nav id="cbp-hrmenu" class="cbp-hrmenu">
+          <ul>
+            <li>
+              <a href="#">Seguros</a>
+              <div class="cbp-hrsub">
+                <div class="cbp-hrsub-inner"> 
+                  <div>
+                    <h4>Learning &amp; Games</h4>
+                    <ul>
+                      <li><a href="#">Catch the Bullet</a></li>
+                      <li><a href="#">Snoopydoo</a></li>
+                      <li><a href="#">Fallen Angel</a></li>
+                      <li><a href="#">Sui Maker</a></li>
+                      <li><a href="#">Wave Master</a></li>
+                      <li><a href="#">Golf Pro</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Utilities</h4>
+                    <ul>
+                      <li><a href="#">Gadget Finder</a></li>
+                      <li><a href="#">Green Tree Express</a></li>
+                      <li><a href="#">Green Tree Pro</a></li>
+                      <li><a href="#">Wobbler 3.0</a></li>
+                      <li><a href="#">Coolkid</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Education</h4>
+                    <ul>
+                      <li><a href="#">Learn Thai</a></li>
+                      <li><a href="#">Math Genius</a></li>
+                      <li><a href="#">Chemokid</a></li>
+                    </ul>
+                    <h4>Professionals</h4>
+                    <ul>
+                      <li><a href="#">Success 1.0</a></li>
+                      <li><a href="#">Moneymaker</a></li>
+                    </ul>
+                  </div>
+                </div><!-- /cbp-hrsub-inner -->
+              </div><!-- /cbp-hrsub -->
+            </li>
+            <li>
+              <a href="#">Comunicaciones</a>
+              <div class="cbp-hrsub">
+                <div class="cbp-hrsub-inner">
+                  <div>
+                    <h4>Education &amp; Learning</h4>
+                    <ul>
+                      <li><a href="#">Learn Thai</a></li>
+                      <li><a href="#">Math Genius</a></li>
+                      <li><a href="#">Chemokid</a></li>
+                    </ul>
+                    <h4>Professionals</h4>
+                    <ul>
+                      <li><a href="#">Success 1.0</a></li>
+                      <li><a href="#">Moneymaker</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Entertainment</h4>
+                    <ul>
+                      <li><a href="#">Gadget Finder</a></li>
+                      <li><a href="#">Green Tree Express</a></li>
+                      <li><a href="#">Green Tree Pro</a></li>
+                      <li><a href="#">Holy Cannoli</a></li>
+                      <li><a href="#">Wobbler 3.0</a></li>
+                      <li><a href="#">Coolkid</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Games</h4>
+                    <ul>
+                      <li><a href="#">Catch the Bullet</a></li>
+                      <li><a href="#">Snoopydoo</a></li>
+                      <li><a href="#">Fallen Angel</a></li>
+                      <li><a href="#">Sui Maker</a></li>
+                      <li><a href="#">Wave Master</a></li>
+                      <li><a href="#">Golf Pro</a></li>
+                    </ul>
+                  </div>
+                </div><!-- /cbp-hrsub-inner -->
+              </div><!-- /cbp-hrsub -->
+            </li>
+            <li>
+              <a href="#">Finanzas</a>
+              <div class="cbp-hrsub">
+                <div class="cbp-hrsub-inner"> 
+                  <div>
+                    <h4>Learning &amp; Games</h4>
+                    <ul>
+                      <li><a href="#">Catch the Bullet</a></li>
+                      <li><a href="#">Snoopydoo</a></li>
+                    </ul>
+                    <h4>Utilities</h4>
+                    <ul>
+                      <li><a href="#">Gadget Finder</a></li>
+                      <li><a href="#">Green Tree Express</a></li>
+                      <li><a href="#">Green Tree Pro</a></li>
+                      <li><a href="#">Wobbler 3.0</a></li>
+                      <li><a href="#">Coolkid</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Education</h4>
+                    <ul>
+                      <li><a href="#">Learn Thai</a></li>
+                      <li><a href="#">Math Genius</a></li>
+                      <li><a href="#">Chemokid</a></li>
+                    </ul>
+                    <h4>Professionals</h4>
+                    <ul>
+                      <li><a href="#">Success 1.0</a></li>
+                      <li><a href="#">Moneymaker</a></li>
+                    </ul>
+                  </div>
+                </div><!-- /cbp-hrsub-inner -->
+              </div><!-- /cbp-hrsub -->
+            </li>
+            <li>
+              <a href="#">Energía</a>
+              <div class="cbp-hrsub">
+                <div class="cbp-hrsub-inner"> 
+                  <div>
+                    <h4>Learning &amp; Games</h4>
+                    <ul>
+                      <li><a href="#">Catch the Bullet</a></li>
+                      <li><a href="#">Snoopydoo</a></li>
+                      <li><a href="#">Fallen Angel</a></li>
+                      <li><a href="#">Sui Maker</a></li>
+                      <li><a href="#">Wave Master</a></li>
+                      <li><a href="#">Golf Pro</a></li>
+                    </ul>
+                    <h4>Utilities</h4>
+                    <ul>
+                      <li><a href="#">Gadget Finder</a></li>
+                      <li><a href="#">Green Tree Express</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Entertainment</h4>
+                    <ul>
+                      <li><a href="#">Gadget Finder</a></li>
+                      <li><a href="#">Green Tree Express</a></li>
+                      <li><a href="#">Green Tree Pro</a></li>
+                      <li><a href="#">Holy Cannoli</a></li>
+                      <li><a href="#">Wobbler 3.0</a></li>
+                      <li><a href="#">Coolkid</a></li>
+                    </ul>
+                  </div>
+                </div><!-- /cbp-hrsub-inner -->
+              </div><!-- /cbp-hrsub -->
+            </li>
+            <li>
+              <a href="#">Comunidad</a>
+              <div class="cbp-hrsub">
+                <div class="cbp-hrsub-inner"> 
+                  <div>
+                    <h4>Utilities</h4>
+                    <ul>
+                      <li><a href="#">Green Tree Pro</a></li>
+                      <li><a href="#">Wobbler 3.0</a></li>
+                      <li><a href="#">Coolkid</a></li>
+                    </ul>
+                    <h4>Education</h4>
+                    <ul>
+                      <li><a href="#">Learn Thai</a></li>
+                      <li><a href="#">Math Genius</a></li>
+                      <li><a href="#">Chemokid</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Professionals</h4>
+                    <ul>
+                      <li><a href="#">Success 1.0</a></li>
+                      <li><a href="#">Moneymaker</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Learning &amp; Games</h4>
+                    <ul>
+                      <li><a href="#">Catch the Bullet</a></li>
+                      <li><a href="#">Snoopydoo</a></li>
+                      <li><a href="#">Fallen Angel</a></li>
+                      <li><a href="#">Sui Maker</a></li>
+                      <li><a href="#">Wave Master</a></li>
+                      <li><a href="#">Golf Pro</a></li>
+                    </ul>
+                  </div>
+                </div><!-- /cbp-hrsub-inner -->
+              </div><!-- /cbp-hrsub -->
+            </li>
+            <li>
+              <a href="#">Noticias</a>
+              <div class="cbp-hrsub">
+                <div class="cbp-hrsub-inner"> 
+                  <div>
+                    <h4>Noticias</h4>
+                    <ul>
+                      <li><a href="#">Portada</a></li>
+                      <li><a href="#">Actualidad</a></li>
+                      <li><a href="#">Reportajes</a></li>
+                      <li><a href="#">Consejos y análisis</a></li>
+                      <li><a href="#">Mejor compra</a></li>
+                      <li><a href="#">Ofertas</a></li>
+                      <li><a href="#">Fama y dinero</a></li>
+                      <li><a href="#">General</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Portada</h4>
+                    <ul>
+                      <li><a href="#">Success 1.0</a></li>
+                      <li><a href="#">Moneymaker</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Últimas noticias</h4>
+                    <ul>
+                      <li><a href="#">Catch the Bullet</a></li>
+                      <li><a href="#">Snoopydoo</a></li>
+                      <li><a href="#">Fallen Angel</a></li>
+                      <li><a href="#">Sui Maker</a></li>
+                      <li><a href="#">Wave Master</a></li>
+                      <li><a href="#">Golf Pro</a></li>
+                    </ul>
+                  </div>
+                </div><!-- /cbp-hrsub-inner -->
+              </div><!-- /cbp-hrsub -->
+            </li>
+          </ul>
+        </nav>
+      </div>
 </div>
-<script>
-divisor = document.getElementById("divisor");
-slider = document.getElementById("slider");
-function moveDivisor() { 
-  divisor.style.width = slider.value+"%";
-}
+  <div class="wrap-article">
+<h3>The facts</h3>
+<div id="wrapper">
+  <div id="columns">
+    <div class="pin">
+      <!-- <img src="http://cssdeck.com/uploads/media/items/2/2v3VhAp.png" /> -->
+      <p>
+        A/B testing discount leads to 121% increase in revenue
+      </p>
+      <a href="https://vwo.com/blog/ab-testing-price-discounts/#UmfcIk0Dqpc4UQkL.99" class="" target="_blank">Read more</a>
+    </div>
   
+   <div class="pin">
+      <!-- <img src="http://cssdeck.com/uploads/media/items/6/6f3nXse.png" /> -->
+      <p>
+       Better Image Selection Improves Conversion Rate by 40.18% for ExactTarget
+      </p>
+      <a href="https://vwo.com/blog/choosing-images-that-improve-conversions/#Pz5B1Lihvofpd6or.99" class="" target="_blank">Read more</a>
+    </div>  
+  
+    <div class="pin">
+      <!-- <img src="http://cssdeck.com/uploads/media/items/6/6f3nXse.png" /> -->
+      <p>
+        Prominent price display increases leads generated by 100%
+      </p>
+      <a href="https://vwo.com/blog/prominent-price-display-increases-leads-generated-by-100/#05fY6iyBplAwpS4w.99" class="" class="" target="_blank">Read more</a>
+    </div>
+  
+    <div class="pin">
+      <!-- <img src="http://cssdeck.com/uploads/media/items/8/8kEc1hS.png" /> -->
+      <p>
+        Do human photos on a landing page increase sales and conversions?
+      </p>
+      <a href="https://vwo.com/blog/human-landing-page-increase-conversion-rate/#kx1rhe0KjmWEj17B.99" class="" target="_blank">Read more</a>
+    </div>
+  
+    <div class="pin">
+      <!-- <img src="http://cssdeck.com/uploads/media/items/1/1swi3Qy.png" /> -->
+      <p>
+        Bandwagon Effect
+<strong>Popularity, or proof that users are enjoying a product or service, can be the final push for indecisive customers to get on board.</strong> The appeal of being on “the winning side,” or fear of being left out can also motivate people sign up or buy.
+      </p>
+      <a href="http://zurb.com/triggers/bandwagon-effect" class="" target="_blank">Read more</a>
+    </div>
+  
+    <div class="pin">
+      <!-- <img src="http://cssdeck.com/uploads/media/items/6/6f3nXse.png" /> -->
+      <p>
+       You can motivate users to act with <strong>scarcity</strong>. Let customers know that supplies are limited or not available for long. This will make purchases seem more unique and the products more valuable. 
+      </p>
+      <a href="http://zurb.com/triggers/scarcity" class="" target="_blank">Read more</a>
+    </div>  
+    
+    <div class="pin">
+      <!-- <img src="http://cssdeck.com/uploads/media/items/2/2v3VhAp.png" /> -->
+      <p>
+        JellyTelly Found their Navigation Elements Were a Distraction, Are You Making the Same Mistake?
+      </p>
+      <a href="https://vwo.com/blog/removing-distractions-increased-conversion-rate/#." class="" target="_blank">Read more</a>
+    </div>
+  
+    <div class="pin">
+      <!-- <img src="http://cssdeck.com/uploads/media/items/1/1swi3Qy.png" /> -->
+      <p>
+        Replacing Drop-Down on an eCommerce Store Increased Revenue by 56.43%
+      </p>
+      <a href="https://vwo.com/blog/removing-drop-down-increased-conversions-on-ecommerce-website/#CA6zUL8VopYQQ2BK.99" class="" target="_blank">Read more</a>
+    </div>
+  
+    <div class="pin">
+      <!-- <img src="http://cssdeck.com/uploads/media/items/8/8kEc1hS.png" /> -->
+      <p>
+       One simple tactic that will always increase engagement – in this case by 40%
+      </p>
+      <a href="https://vwo.com/blog/split-test-on-home-page-increased-engagement-by-40/#kPM8tsk9HdoR5e00.99" class="" target="_blank">Read more</a>
+    </div>
+  
+    <div class="pin">
+      <!-- <img src="http://cssdeck.com/uploads/media/items/2/2v3VhAp.png" /> -->
+      <p>
+        Donec a fermentum nisi. Integer dolor est, commodo ut 
+        sagittis vitae, egestas at augue. Suspendisse id nulla 
+        ac urna vestibulum mattis. Duis rutrum porta tortor ut convallis.
+      </p>
+      <a href="#articles_01_header" class="">Read more</a>
+    </div>
+  
+    <div class="pin">
+      <!-- <img src="http://cssdeck.com/uploads/media/items/1/1swi3Qy.png" /> -->
+      <p>
+        Donec a fermentum nisi. Integer dolor est, commodo ut 
+        sagittis vitae, egestas at augue. Suspendisse id nulla 
+        ac urna vestibulum mattis. 
+      </p>
+      <a href="#articles_01_header" class="">Read more</a>
+    </div>
+  
+    <div class="pin">
+      <!-- <img src="http://cssdeck.com/uploads/media/items/6/6f3nXse.png" /> -->
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Sed feugiat consectetur pellentesque. Nam ac elit risus, 
+        ac blandit dui. Duis rutrum porta tortor ut convallis.
+      </p>
+      <a href="#articles_01_header" class="">Read more</a>
+    </div>  
+    
+    <div class="pin">
+      <!-- <img src="http://cssdeck.com/uploads/media/items/2/2v3VhAp.png" /> -->
+      <p>
+        Donec a fermentum nisi. Integer dolor est, commodo ut 
+        sagittis vitae, egestas at augue. Suspendisse id nulla 
+        ac urna vestibulum mattis. 
+      </p>
+      <a href="#articles_01_header" class="">Read more</a>
+    </div>
+  
+    <div class="pin">
+      <!-- <img src="http://cssdeck.com/uploads/media/items/1/1swi3Qy.png" /> -->
+      <p>
+        Donec a fermentum nisi.  <strong>Integer dolor est</strong>, commodo ut 
+        sagittis vitae, egestas at augue. Suspendisse id nulla 
+        ac urna vestibulum mattis. 
+      </p>
+      <a href="#articles_01_header" class="">Read more</a>
+    </div>
+  
+    <div class="pin">
+      <!-- <img src="http://cssdeck.com/uploads/media/items/6/6f3nXse.png" /> -->
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Sed feugiat consectetur pellentesque. Nam ac elit risus, 
+        ac blandit dui. Duis rutrum porta tortor ut convallis.
+      </p>
+      <a href="#articles_01_header" class="">Read more</a>
+    </div>
+  </div>
+</div>
+</div>
+</div> <!-- wrap-article -->
+<footer class="labnav">  
+  <div class="back">
+<a href="#"><img src="img/back_btn.svg" alt=""/></a>
+</div>
+</footer>
 
-</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/cbpHorizontalMenu.min.js"></script>
+    <script>
+      $(function() {
+        cbpHorizontalMenu.init();
+      });
+    </script>
+

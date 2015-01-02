@@ -43,8 +43,8 @@ body {
   -webkit-user-select: none;
   /* prevent copy paste, to allow, change 'none' to 'text' */
   background-color: #fff;
-  font-family: 'Open Sans', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-family: 'Raleway', 'Open Sans', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+ font-size: 12px;
   height: 100%;
   margin: 0px;
   padding: 0px;
@@ -206,9 +206,9 @@ left:420px;
   transform-origin: 0% 0%;
  animation: scaleUp 0.5s both ease-in; */}
 .page-home.ng-enter {
-  /*-webkit-animation: slideOutLeft 0.5s both ease-in;
+  -webkit-animation: slideOutLeft 0.5s both ease-in;
   -moz-animation: slideOutLeft 0.5s both ease-in;
-  animation: slideOutLeft 0.5s both ease-in;*/ }
+  animation: slideOutLeft 0.5s both ease-in; }
 
 .page-article {
   background: #FFF;
@@ -310,7 +310,7 @@ left:420px;
     transform: translateZ(-3000px) rotateZ(360deg);
     opacity: 0; } }
 section {
-  min-width: 960px;
+  /*min-width: 960px;*/
   opacity: 0; }
 
 .loaded section, .no-js section {
@@ -323,7 +323,8 @@ main {
   overflow-x: hidden; }
 
 .labnav{
-  background: #4d326e;
+ background: #864587;
+  /*background: #4d326e;*/
 width: 100%;
 height: 45px;
 }
@@ -379,21 +380,60 @@ display: block;
     text-decoration: underline; }
 
 .wrap-article{
-  padding:2em;
+  width:60%;
+  margin:0 auto;
+  padding:1em;
+  font-size: 18px;
 }
 
-.wrap-article h3{
+.wrap-article img.current{
+  width:70%;
+  border:1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom:3em; 
+  }
+.wrap-article h1{
+  clear:both;
+  font-size: 2em;
+font-weight: 700;
+line-height: 2em;
+text-transform: uppercase;
+}
+
+.wrap-article h3, .browser-wrap h3{
+  clear:both;
   font-size: 1.5em;
 font-weight: 700;
 line-height: 2em;
 }
-
+.wrap-article h4{
+  clear:both;
+  font-size: 1em;
+font-weight: 700;
+line-height: 1.2em;
+text-transform:uppercase;
+margin-bottom:.3em;
+}
+.red{
+  color:#ea5958;
+}
+.green{
+  color:#6bc867;
+}
 .wrap-article p{
   font-family: 'Raleway', 'Open Sans', sans-serif; 
   font-size: 1em;
 font-weight: 400;
-line-height: 1.2em;
+line-height: 1.4em;
 margin-bottom:2em;
+}
+/*.petit{
+  width:60%;
+}*/
+.illustr{
+  float:left;
+  margin:0 1em 1em 0;
+  width: 30%;
 }
 /* Slide 1 */
 #slide-1 .bcg {
@@ -483,10 +523,15 @@ display: block;
   cursor:pointer;
 }
 
+.browser-wrap{
+  background:#864587;
+  padding:4em;
+}
 .faux-browser{
+  background:#fff;
   position:relative;
 width: 100%;
-margin: 2em auto;
+margin: 0;
 border-radius: 3px;
 box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.20),
                 0px 1px 0px 0px #e3e3e3 inset;
@@ -525,12 +570,12 @@ left: 7px;
   color:#2075a5;
 }
 
-#slide-6 a.cta-slide{
+#slide-6 a.cta-slide, #slide-4 a.cta-slide, #slide-3 a.cta-slide{
   background:#ccc;
-  color:#2a2a2a;
+  color:#fff;
   border:2px solid #ccc;
   }
-#slide-6 a.cta-slide:hover{
+#slide-6 a.cta-slide:hover, #slide-4 a.cta-slide:hover, #slide-3 a.cta-slide:hover{
   background:#ccc;
   color:#2a2a2a;
 }
@@ -724,7 +769,10 @@ left: 7px;
 
 /* Before after pictures for product homepage */
 div#comparison-product { 
-  margin-top:5em;
+  margin-top:3em;
+  margin-bottom:3em;
+  border-radius: 3px;
+border: 1px solid #d6d2d0;
  height: 60vw; max-width: 1200px;
 max-height: 600px; overflow: hidden; margin-left: auto; margin-right: auto;}
 div#comparison-product figure { 
@@ -745,18 +793,21 @@ div#comparison-product figure div {
 
 /* Before after pictures for Car Insurance */
 div#comparison-breadcrumb-ci { 
-  margin-top:5em;
+  margin-top:3em;
+  margin-bottom:3em;
+  border-radius: 3px;
+border: 1px solid #d6d2d0;
  height: 60vw; max-width: 1200px;
 max-height: 600px; overflow: hidden; margin-left: auto; margin-right: auto;}
 div#comparison-breadcrumb-ci figure { 
-  background-image: url(http://wearestudio-r.co.uk/image_retouch/image-after.jpg); background-size: cover;
+  background-image: url(../img/breadcrumb-ci_new.jpg); background-size: cover;
   position: relative;
   font-size: 0;
   width: 100%; height: 100%;  margin: 0; 
 }
 div#comparison-breadcrumb-ci figure > img { position: relative; width: 100%; }
 div#comparison-breadcrumb-ci figure div { 
-  background-image: url(http://wearestudio-r.co.uk/image_retouch/image-before.jpg); background-size: cover;
+  background-image: url(../img/breadcrumb-ci_old.jpg); background-size: cover;
   position: absolute;
   width: 50%; 
   box-shadow: 0 5px 10px -2px rgba(0,0,0,0.4);
@@ -824,8 +875,8 @@ input[type=range]:focus::-moz-range-thumb {
 
 .pin {
   display: inline-block;
-  /*background: #FEFEFE;*/
   border: 1px solid #d6d2d0;
+  /*background: #FEFEFE;*/
   /*box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);*/
   margin: 0 2px 15px;
   -webkit-column-break-inside: avoid;
