@@ -765,11 +765,71 @@ left: 0;
 margin-top: 0;
 margin-left: 6%;
 }
+
 .btn-signin{
   position: absolute;
 right: 5%;
 margin-top: .7em;
 }
+
+
+.magnifier{
+  width: 29px;
+}
+.searchform {
+padding: 2em 0 0 0;
+position: relative;
+margin: 0 auto;
+overflow: hidden;
+display: block;
+width: 70%;
+
+}
+.cbp-hropen .cbp-hrsub.search{
+  padding-bottom:2em;
+}
+.searchform input, .searchform button {
+  float: left
+}
+.searchform input {
+  background:#fefefe;
+  border: none;
+  font:16px/16px 'raleway', Helvetica, Arial, sans-serif;
+  margin-right: 5px;
+  padding: 10px;
+  width: 75%;
+
+}
+  .searchform input:focus {
+    outline: none;
+    box-shadow:0 0 4px #0d76be inset;
+    -moz-box-shadow:0 0 4px #0d76be inset;
+    -webkit-box-shadow:0 0 4px #0d76be inset;
+  }
+  .searchform input::-webkit-input-placeholder {
+    font-style: italic;
+    line-height: 15px
+  }
+
+  .searchform input:-moz-placeholder {
+    font-style: italic;
+    line-height: 15px
+  }
+
+.searchform button {
+  background: #afdefa;
+
+  border: none;
+  color:#4d326e;
+  cursor: pointer;
+  font: 13px/13px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+ padding: 12.5px;
+width: 130px;
+
+}
+  .searchform button:hover {
+    opacity:.9;
+  }
 
 /* Examples for media queries */
 @media screen and (max-width: 52.75em) {
