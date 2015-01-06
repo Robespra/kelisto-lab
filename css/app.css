@@ -482,14 +482,14 @@ display: block;
 .clearfix{
   clear:both;
 }
-#slide-2 h2, #slide-3 h2, #slide-4 h2, #slide-5 h2, #slide-6 h2{
+#slide-2 h2, #slide-3 h2, #slide-4 h2, #slide-5 h2, #slide-6 h2, #slide-7 h2{
   font-size: 4.2em;
 }
-#slide-2 a, #slide-3 a, #slide-4 a, #slide-5 a, #slide-6 a{
+#slide-2 a, #slide-3 a, #slide-4 a, #slide-5 a, #slide-6 a, #slide-7 a{
   color:#fff;
   text-decoration: none;
 }
-#slide-2 p, #slide-3 p, #slide-4 p, #slide-5 p, #slide-6 p{
+#slide-2 p, #slide-3 p, #slide-4 p, #slide-5 p, #slide-6 p, #slide-7 p{
   color:#fff;
   text-decoration: none;
 }
@@ -571,14 +571,14 @@ left: 7px;
   color:#2075a5;
 }
 
-#slide-6 a.cta-slide, #slide-4 a.cta-slide, #slide-3 a.cta-slide{
+#slide-6 a.cta-slide, #slide-4 a.cta-slide, #slide-3 a.cta-slide, #slide-7 a.cta-slide{
   background:#ccc;
   color:#fff;
   border:2px solid #ccc;
   }
-#slide-6 a.cta-slide:hover, #slide-4 a.cta-slide:hover, #slide-3 a.cta-slide:hover{
+#slide-6 a.cta-slide:hover, #slide-4 a.cta-slide:hover, #slide-3 a.cta-slide:hover, #slide-7 a.cta-slide:hover{
   background:#ccc;
-  color:#2a2a2a;
+color:#fff;
 }
 /* Slide 2 */
 #slide-2 h2 {
@@ -615,6 +615,11 @@ left: 7px;
   background-image: url("../img/bcg_slide-6.svg"); }
 #slide-6 .hsContent {
   text-align: right; }
+
+  #slide-7 .bcg {
+  background-image: url("../img/bcg_slide-7.svg"); }
+#slide-7 .hsContent {
+  text-align: left; }
 
 
 

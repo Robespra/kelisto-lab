@@ -4,9 +4,5 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="346.897px" height="224.709px" viewBox="409.897 281.708 346.897 224.709"
 	 enable-background="new 409.897 281.708 346.897 224.709" xml:space="preserve">
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="409.8975" y1="394.063" x2="756.7949" y2="394.063">
-	<stop  offset="0" style="stop-color:#5C258D"/>
-	<stop  offset="1" style="stop-color:#4389A2"/>
-</linearGradient>
-<path fill="url(#SVGID_1_)" d="M409.897,281.708h346.897v224.709H409.897V281.708z"/>
+<path fill="#5CC86A" d="M409.897,281.708h346.897v224.709H409.897V281.708z"/>
 </svg>
